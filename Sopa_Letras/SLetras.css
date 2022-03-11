@@ -1,0 +1,59 @@
+table{
+  
+  height:200%;
+  margin: auto;
+  width: 50%;
+  background-color: rgba(250, 144, 6, 0.747);
+  
+}
+.title{
+  padding-left: 35%;
+  color:rgba(0, 0, 0, 0.952);
+  font-family: 'Trade Winds', cursive;
+  font-size:xxx-large;
+  font-weight:lighter;
+  text-decoration: solid;
+  
+}
+.buscar{
+  color: rgb(231, 41, 16);
+  font-size: xx-large;
+  text-align: left;
+  margin-left: 7%;
+  font-family: 'Lobster', cursive;
+  font-weight:lighter;
+}
+ul{
+  /* background-color: aqua; */
+  height: 400px;
+  padding: 20px;
+  margin-left: 100px;
+  float: left;
+  line-height:150% ;
+  text-align: left;
+  
+}
+
+body{
+background-color: rgba(148, 155, 155, 0.39);
+}
+
+img{
+  width: 15%;
+  float: right;
+  display: flex;
+  margin-right: 3%;
+  padding-top: 20%;
+  
+}
+
+ th:hover{
+  background-color: rgb(252, 250, 250);
+  cursor: pointer;
+}
+footer .home{
+  margin-right: 45%;
+  padding-top: 0%;
+  
+
+}
