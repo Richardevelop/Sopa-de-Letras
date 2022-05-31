@@ -3,7 +3,7 @@ table{
   height:200%;
   margin: auto;
   width: 50%;
-  background-color: rgba(250, 144, 6, 0.747);
+  background-color: rgb(255, 255, 255);
   
 }
 .title{
@@ -25,7 +25,7 @@ table{
 }
 ul{
   /* background-color: aqua; */
-  height: 400px;
+  /* height: 400px; */
   padding: 20px;
   margin-left: 100px;
   float: left;
@@ -35,25 +35,112 @@ ul{
 }
 
 body{
-background-color: rgba(148, 155, 155, 0.39);
+background-color: rgba(169, 227, 241, 0.274);
 }
 
-img{
+/* .home{
+  background-color: black;
   width: 15%;
   float: right;
   display: flex;
-  margin-right: 3%;
+  margin-right: 80px;
   padding-top: 20%;
+
+  
+} */
+
+
+.cards{
+  
+  position: relative;
+  width: 300px;
+  height: 100px;
+  margin: 15px;
+  flex-wrap: wrap;
+  float: right;
+padding-top:18%;
   
 }
+.cards .face{
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .7s;
+}
+.cards .front{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px rgb(253, 253, 253);
+}
+
+.cards .front img{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.cards .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgba(255, 254, 254, 0.342);
+ 
+}
+.cards .back img{
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .7s;
+}
+.cards .face .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+
+
+
+.cards:hover .front{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cards:hover .back{
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.boton{
+  background-color: rgba(255, 166, 0, 0.575);
+  font-size:20pt;
+  width:150px;
+  height:40px;
+  color:#0184ff;
+  cursor:pointer;
+ margin-left: 83%;
+ border-radius: 15%;
+}
+
+
+
 
  th:hover{
-  background-color: rgb(252, 250, 250);
+   
+  background-color: rgb(65, 163, 243);
   cursor: pointer;
 }
-footer .home{
-  margin-right: 45%;
-  padding-top: 0%;
-  
-
+footer{
+  text-align: center;
+  display: flex; 
+  width: 20%;
+  padding-left:  550px;
+}
+.home {
+  width: 100%;
+  /* text-align: center; */
 }
